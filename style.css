@@ -1,0 +1,204 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#fff7f0;
+}
+
+/* LOGO */
+
+.logo{
+width:140px;
+margin-bottom:20px;
+}
+
+/* WELCOME */
+
+.welcome{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+),
+url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200');
+
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.welcome h1{
+font-size:60px;
+}
+
+.welcome p{
+font-size:25px;
+margin-top:20px;
+}
+
+/* BUTTON */
+
+button{
+padding:14px 30px;
+border:none;
+background:orange;
+color:white;
+border-radius:40px;
+cursor:pointer;
+font-size:18px;
+margin-top:15px;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff6600;
+transform:scale(1.05);
+}
+
+/* NAVBAR */
+
+nav{
+background:linear-gradient(to right,#ff9800,#ff5722);
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+/* SEARCH */
+
+.search-box{
+text-align:center;
+margin-top:30px;
+}
+
+.search-box input{
+width:350px;
+padding:15px;
+border-radius:40px;
+border:2px solid orange;
+font-size:18px;
+}
+
+/* MENU */
+
+.menu{
+padding:50px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:20px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.card h2{
+margin-top:15px;
+font-size:28px;
+}
+
+.card p{
+margin-top:10px;
+font-size:24px;
+color:#ff5722;
+}
+
+/* QUANTITY */
+
+.qty{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+margin-top:15px;
+}
+
+/* ORDERS */
+
+.orders,
+.billing{
+padding:50px;
+text-align:center;
+}
+
+.order-card{
+background:white;
+padding:20px;
+margin:20px auto;
+width:350px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* QR */
+
+.qr{
+width:220px;
+margin-top:20px;
+border-radius:20px;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .card{
+background:#222;
+color:white;
+}
+
+.dark nav{
+background:black;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.welcome h1{
+font-size:40px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+.search-box input{
+width:90%;
+}
+
+}

@@ -1,0 +1,80 @@
+<!-- ========================= billing.html ========================= -->
+
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Billing</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="billing">
+
+<h1>
+🧾 बिलिंग
+</h1>
+
+<div id="bill"></div>
+
+<h2 id="total"></h2>
+
+<button onclick="generateBill()">
+Generate Bill
+</button>
+
+<button onclick="downloadPDF()">
+PDF Download
+</button>
+
+<h2 style="margin-top:40px;">
+📷 QR Payment
+</h2>
+
+<img 
+src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=PhonePePayment"
+class="qr"
+>
+
+<p>
+PhonePe / Google Pay / Paytm
+</p>
+
+<h3 style="margin-top:30px;">
+👨‍💼 मालक : शिवाजी दत्तू ठोसरे
+</h3>
+
+<h3>
+📞 8530217561
+</h3>
+
+<p style="margin-top:15px;">
+📍 छत्रपती शिवाजी महाराज चौक,
+येळपणे,
+ता. श्रीगोंदा,
+जि. अहिल्यानगर
+</p>
+
+<a href="visit.html">
+
+<button>
+Finish
+</button>
+
+</a>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
